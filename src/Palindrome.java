@@ -22,11 +22,11 @@ public class Palindrome {
 
         boolean tf = false;
         String compare = Integer.toString(x);
-        StringBuffer test = new StringBuffer(compare);
-        String reverse = test.reverse().toString();
-        String test2 = reverse.substring(0, 1);
+        StringBuffer str = new StringBuffer(compare);
+        String reverse = str.reverse().toString();
+        String str2 = reverse.substring(0, 1);
 
-        if ("0".equals(test2)) tf =  false;
+        if ("0".equals(str2)) tf =  false;
         else if (reverse.toString().equals(compare)) tf = true;
 
         return tf;
