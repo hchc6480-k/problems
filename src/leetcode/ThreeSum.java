@@ -1,3 +1,5 @@
+package leetcode;
+
 import java.util.*;
 
 /**
@@ -55,6 +57,36 @@ public class ThreeSum {
         }
 
         return new ArrayList<>(result);
+
+
+        /*HashSet<List<Integer>> result = new HashSet<>();
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 1; i++) {
+            int left = i + 1;
+            int right = nums.length - 1;
+
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    List<Integer>  add = new ArrayList<>();
+                    add.add(nums[i]);
+                    add.add(nums[left]);
+                    add.add(nums[right]);
+                    result.add(add);
+
+                    left++;
+                    right--;
+                } else {
+                    if (sum < 0) {
+                        left++;
+                    } else {
+                        right --;
+                    }
+                }
+            }
+        }
+
+        System.out.println(new ArrayList<>(result));*/
     }
 
 

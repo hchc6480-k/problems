@@ -1,3 +1,5 @@
+package leetcode;
+
 public class Palindrome {
     public static void main(String[] args) {
         /*Input: x = 121

@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LongestPalindromicSubstring {
     /**
      * Input: s = "babad"

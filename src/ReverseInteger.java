@@ -38,5 +38,28 @@ public class ReverseInteger {
         }
 
         return (int)cmp;
+
+        /*int x = 1534236469;
+        if (x == 0 ) {
+            // return 0;
+            System.out.println(0);
+        }
+
+        String s = Long.toString(x);
+
+        String minus = s.contains("-") ? "-" : "";
+        StringBuffer str = new StringBuffer(s.replace("-",""));
+        str = str.reverse();
+
+        if (str.charAt(0) == '0') {
+            str.deleteCharAt(0);
+        }
+
+        long l = new BigDecimal(Long.parseLong(minus + str.toString())).longValue();
+        if (l == 0 || l > Integer.MAX_VALUE || l < Integer.MIN_VALUE) {
+            // return 0;
+            System.out.println(0);
+        }
+        System.out.println((int)l);*/
     }
 }
